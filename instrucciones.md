@@ -132,6 +132,8 @@ exit
    ```
    ```
    apt-get install git --allow-unauthenticated
+   ```
+   ```
    exit
    ```
 2. Clonar el backend desde GitHub en el escritorio del usuario wit:
@@ -142,6 +144,12 @@ exit
    npm install
    ```
 3. Habilitar puertos usb de manera permanente:
+   ```
+   su
+   ```
+   ```
+   wit321
+   ```
    ```
    nano /etc/udev/rules.d/99-acm-permisos.rules
    ```
@@ -155,12 +163,6 @@ exit
    udevadm trigger
    ```
    verificar con:
-   ```
-   su
-   ```
-   ```
-   wit321
-   ```
    ```
    ls -l /dev/ttyACM*
    exit
